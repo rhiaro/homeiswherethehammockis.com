@@ -8,26 +8,92 @@
     body {
       background-image: url('styles/contourbg.png');
       background-repeat: repeat;
+      height: 100%;
     }
     header {
       width: 100%;
-      height: 200px;
-      border-bottom: 4px solid black;
-      text-align: center;
+      height: 160px;
+      text-align: left;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
     }
     h1 {
       margin: 0; padding: 0;
+      margin-right: auto;
+      height: 100%;
+    }
+    h1 img {
+      height: 100%;
+    }
+    nav {
+      text-align: left;
+      background-color: #fff;
+      margin-left: auto;
+    }
+    nav ul {
+      list-style-type: none;
+      width: 100%;
+    }
+    nav ul li {
+      float: left;
+    }
+    nav ul li a {
+      padding: 0 2em 0 2em;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: normal; font-size: 1.6em;
+      color: #aaa;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .banner {
+      width: 100%; height: 400px;
+      padding: 1em;
+      display: flex;
+      align-items: center;
+      background-image: url('https://i.amy.gy/201810-latvia/IMG_20181026_114650.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-origin: border-box;
+      background-position: center center;
+    }
+    .banner article {
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 2em;
+      font-size: 2em;
+    }
+    .banner article h2 {
+      font-family: serif, Georgia, 'Times New Roman';
+      font-size: 2em;
+      font-style: italic;
+      font-weight: normal;
     }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <header>
-      <a href="/"><img src="styles/hammock.png" /></a>
-      <h1><img src="styles/h.png" alt="home is where the hammock is" /></h1>
+      <h1>
+        <img src="styles/h.svg" alt="home is where the hammock is" />
+      </h1>
+      <nav>
+        <ul class="inner">
+          <li><a href="about">About</a></li>
+          <li><a href="route">Route</a></li>
+          <li><a href="faq">FAQ</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-
+      <div class="banner">
+        <article>
+          <h2>Latest post</h2>
+          <p>13 photos added to Latvia (Oct 2018) &gt;</p>
+        </article>
+      </div>
     </main>
 
   </body>
